@@ -1,0 +1,6 @@
+node_modules/
+*.log
+test-ticket.pdf
+
+.env
+.env.*

@@ -1,0 +1,30 @@
+node_modules
+dist
+*.log
+.env
+.DS_Store
+
+# Ignore everything
+*
+
+# Keep repository files
+!.gitignore
+!README.md
+
+# Keep backend
+!backend/
+!backend/**
+
+# Keep frontend
+!frontend/
+!frontend/**
+
+# Ignore dependencies
+backend/node_modules/
+frontend/node_modules/
+
+# Ignore environment files
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*

@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-black font-body text-[#F4F6FA] antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    @apply font-display text-[#F4F6FA];
+  }
+  ::selection {
+    @apply bg-brand-saffron/40 text-[#080F1B];
+  }
+}
+
+@layer components {
+  /* ---- Buttons ---- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sky focus-visible:ring-offset-2 disabled:opacity-50;
+  }
+  .btn-saffron {
+  @apply inline-flex items-center justify-center gap-2
+    bg-[#ff5f00] text-white font-bold
+    px-7 py-3 rounded-[22px]
+    whitespace-nowrap shadow-none
+    transition-all duration-200
+    hover:-translate-y-0.5
+    hover:bg-[#e65300]
+    hover:shadow-lg
+    focus-visible:outline-none
+    focus-visible:ring-2
+    focus-visible:ring-[#ff5f00];
+}
+  .btn-navy {
+    @apply btn bg-black text-white shadow-card hover:-translate-y-0.5 hover:bg-navy-600 focus-visible:ring-brand-saffron;
+  }
+  .btn-sky {
+    @apply btn bg-brand-sky text-[#080F1B] shadow-card hover:-translate-y-0.5 hover:brightness-95 focus-visible:ring-brand-sky;
+  }
+  .btn-ghost {
+    @apply btn border border-navy-400 bg-navy-800 text-[#F4F6FA] hover:border-brand-saffron hover:bg-black focus-visible:ring-brand-sky;
+  }
+  .btn-outline-light {
+    @apply btn border border-white/40 text-white hover:bg-white/10 focus-visible:ring-white;
+  }
+
+  /* ---- Cards ---- */
+  .card {
+    @apply rounded-2xl border border-navy-600 bg-black shadow-card;
+  }
+  .card-dark {
+    @apply rounded-2xl border border-white/10 bg-black shadow-card;
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:border-brand-saffron/50 hover:shadow-lift;
+  }
+
+  /* ---- Surfaces ---- */
+  .panel-dark {
+    @apply rounded-2xl border border-navy-600 bg-black/90 backdrop-blur;
+  }
+
+  /* ---- Inputs ---- */
+  .input {
+    @apply w-full rounded-xl border border-navy-500 bg-navy-800 px-4 py-2.5 text-[#F4F6FA] placeholder-[#8492A6] transition-colors focus:border-brand-sky focus:outline-none focus:ring-2 focus:ring-brand-sky/20;
+  }
+  .input-dark {
+    @apply w-full rounded-xl border border-navy-500 bg-navy-800 px-4 py-2.5 text-[#F4F6FA] placeholder-[#8492A6] focus:border-brand-sky focus:outline-none focus:ring-2 focus:ring-brand-sky/20;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-medium text-[#B3BECE];
+  }
+  .label-dark {
+    @apply mb-1.5 block text-sm font-medium text-[#B3BECE];
+  }
+
+  /* ---- Typography ---- */
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-white md:text-4xl;
+  }
+  .section-title-light {
+    @apply text-3xl font-bold tracking-tight text-white md:text-4xl;
+  }
+  .section-sub {
+    @apply mt-3 text-base text-[#8492A6];
+  }
+  .section-sub-light {
+    @apply mt-3 text-base text-[#8492A6];
+  }
+  .eyebrow {
+    @apply mb-2 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-brand-saffron;
+  }
+  .mono {
+    @apply font-mono;
+  }
+
+  /* ---- Badges ---- */
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+  .badge-saffron { @apply badge bg-brand-saffron/20 text-brand-saffron; }
+  .badge-sky { @apply badge bg-brand-sky/20 text-brand-sky; }
+  .badge-teal { @apply badge bg-brand-teal/20 text-brand-teal; }
+  .badge-green { @apply badge bg-brand-green/20 text-brand-green; }
+  .badge-coral { @apply badge bg-brand-coral/20 text-brand-coral; }
+  .badge-neutral { @apply badge bg-navy-600 text-[#B3BECE]; }
+
+  /* ---- Tables ---- */
+  .table-wrap {
+    @apply overflow-x-auto rounded-2xl border border-navy-600 bg-black shadow-card;
+  }
+  .table-wrap table { @apply w-full text-left text-sm; }
+  .table-wrap thead th { @apply border-b border-navy-600 bg-navy-800 px-4 py-3 text-xs font-semibold uppercase tracking-wide text-[#B3BECE]; }
+  .table-wrap tbody td { @apply border-b border-navy-600 px-4 py-3 text-[#F4F6FA]; }
+  .table-wrap tbody tr:last-child td { @apply border-b-0; }
+  .table-wrap tbody tr:hover td { @apply bg-navy-800/60; }
+
+  /* ---- Progress / status ---- */
+  .status-pill {
+    @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold;
+  }
+}
+
+
+/* ---- Parallax stars animation ---- *//* ---- Moving star field ---- */
+/* ================================
+   MOVING STAR FIELD
+================================ */
+
+@keyframes stars-move {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -1000px 600px;
+  }
+}
+
+@keyframes stars-move-slow {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 700px -500px;
+  }
+}
+
+.stars-layer {
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.9), transparent),
+    radial-gradient(2px 2px at 20% 80%, rgba(255,255,255,.7), transparent),
+    radial-gradient(1px 1px at 30% 40%, rgba(255,255,255,.9), transparent),
+    radial-gradient(2px 2px at 40% 10%, rgba(255,255,255,.7), transparent),
+    radial-gradient(1px 1px at 50% 70%, rgba(255,255,255,.8), transparent),
+    radial-gradient(1px 1px at 60% 30%, rgba(255,255,255,.7), transparent),
+    radial-gradient(2px 2px at 70% 85%, rgba(255,255,255,.8), transparent),
+    radial-gradient(1px 1px at 80% 50%, rgba(255,255,255,.9), transparent),
+    radial-gradient(2px 2px at 90% 15%, rgba(255,255,255,.7), transparent),
+    radial-gradient(1px 1px at 95% 75%, rgba(255,255,255,.8), transparent);
+
+  background-size: 500px 500px;
+
+  animation: stars-move 20s linear infinite;
+
+  will-change: background-position;
+}
+
+.stars-layer-delayed {
+  background-image:
+    radial-gradient(1px 1px at 15% 60%, rgba(255,255,255,.6), transparent),
+    radial-gradient(2px 2px at 35% 25%, rgba(255,255,255,.5), transparent),
+    radial-gradient(1px 1px at 55% 90%, rgba(255,255,255,.7), transparent),
+    radial-gradient(1px 1px at 75% 35%, rgba(255,255,255,.6), transparent),
+    radial-gradient(2px 2px at 85% 70%, rgba(255,255,255,.5), transparent);
+
+  background-size: 700px 700px;
+
+  animation: stars-move-slow 35s linear infinite;
+
+  will-change: background-position;
+}
