@@ -9,6 +9,7 @@ const links = [
   { to: '/companies', label: 'Space Companies' },
   { to: '/adventures', label: 'Adventures' },
   { to: '/assessment', label: 'Astronaut Training' },
+  { to: '/store', label: 'Space Store' },
 ];
 
 export default function Navbar() {
@@ -90,4 +91,5 @@ export default function Navbar() {
     </header>
   );
 }
+
 

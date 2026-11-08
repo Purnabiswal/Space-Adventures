@@ -8,6 +8,7 @@ import CompanyDetail from './pages/CompanyDetail.jsx';
 import Adventures from './pages/Adventures.jsx';
 import AdventureDetail from './pages/AdventureDetail.jsx';
 import Assessment from './pages/Assessment.jsx';
+import SpaceStore from './pages/SpaceStore.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
 import Dashboard from './pages/Dashboard.jsx';
@@ -42,6 +43,7 @@ export default function App() {
         <Route path="/adventures" element={<Adventures />} />
         <Route path="/adventures/:slug" element={<AdventureDetail />} />
         <Route path="/assessment" element={<Assessment />} />
+        <Route path="/store" element={<SpaceStore />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/verify" element={<VerifyTicket />} />
@@ -60,3 +62,4 @@ export default function App() {
     </MainLayout>
   );
 }
+
