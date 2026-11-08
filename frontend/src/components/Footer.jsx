@@ -20,7 +20,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link className="hover:text-brand-saffron" to="/destinations">Destinations</Link></li>
               <li><Link className="hover:text-brand-saffron" to="/companies">Space Companies</Link></li>
-              <li><Link className="hover:text-brand-saffron" to="/adventures">Adventures</Link></li>
+              {/* <li><Link className="hover:text-brand-saffron" to="/adventures">Adventures</Link></li> */}
               <li><Link className="hover:text-brand-saffron" to="/assessment">Astronaut Training</Link></li>
             </ul>
           </div>
@@ -29,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link className="hover:text-brand-saffron" to="/login">Login</Link></li>
               <li><Link className="hover:text-brand-saffron" to="/register">Register</Link></li>
-              <li><Link className="hover:text-brand-saffron" to="/verify">Verify Ticket</Link></li>
+              {/* <li><Link className="hover:text-brand-saffron" to="/verify">Verify Ticket</Link></li> */}
             </ul>
           </div>
           <div>
