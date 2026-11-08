@@ -212,9 +212,9 @@ export default function Home() {
                     <Link to="/assessment" className="btn-saffron">
                       Test My Space IQ{" "}
                     </Link>
-                    <Link to="/assessment" className="btn-outline-light">
+                    {/* <Link to="/assessment" className="btn-outline-light">
                       Begin Astronaut Training
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
                 <div className="grid gap-4">
