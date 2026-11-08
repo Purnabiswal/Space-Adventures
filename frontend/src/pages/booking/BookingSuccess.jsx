@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Rocket, CheckCircle2, Download, LayoutDashboard, MapPin, CalendarDays, ShieldCheck, Award, Star } from 'lucide-react';
-import api from '../api/client.js';
-import { Loading, ErrorState } from '../components/ui.jsx';
-import { formatINR, formatDate, errorMessage } from '../utils/format.js';
-import { downloadProtected } from '../utils/download.js';
+import api from '../../api/client.js';
+import { Loading, ErrorState } from '../../components/ui.jsx';
+import { formatINR, formatDate, errorMessage } from '../../utils/format.js';
+import { downloadProtected } from '../../utils/download.js';
 
 export default function BookingSuccess() {
   const { bookingReference } = useParams();
@@ -144,3 +144,4 @@ export default function BookingSuccess() {
     </div>
   );
 }
+

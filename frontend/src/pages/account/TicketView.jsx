@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Download, Rocket, ShieldCheck, AlertTriangle, Info } from 'lucide-react';
-import api from '../api/client.js';
-import { Loading, ErrorState } from '../components/ui.jsx';
-import { formatDate, formatINR, errorMessage } from '../utils/format.js';
-import { downloadProtected } from '../utils/download.js';
+import api from '../../api/client.js';
+import { Loading, ErrorState } from '../../components/ui.jsx';
+import { formatDate, formatINR, errorMessage } from '../../utils/format.js';
+import { downloadProtected } from '../../utils/download.js';
 
 export default function TicketView() {
   const { ticketNumber } = useParams();
@@ -103,5 +103,6 @@ export default function TicketView() {
     </div>
   );
 }
+
 
 

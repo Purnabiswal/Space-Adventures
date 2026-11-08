@@ -1,24 +1,24 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout.jsx';
 import Home from './pages/Home.jsx';
-import Destinations from './pages/Destinations.jsx';
-import DestinationDetail from './pages/DestinationDetail.jsx';
-import Companies from './pages/Companies.jsx';
-import CompanyDetail from './pages/CompanyDetail.jsx';
-import Adventures from './pages/Adventures.jsx';
-import AdventureDetail from './pages/AdventureDetail.jsx';
+import Destinations from './pages/destinations/Destinations.jsx';
+import DestinationDetail from './pages/destinations/DestinationDetail.jsx';
+import Companies from './pages/companies/Companies.jsx';
+import CompanyDetail from './pages/companies/CompanyDetail.jsx';
+import Adventures from './pages/adventures/Adventures.jsx';
+import AdventureDetail from './pages/adventures/AdventureDetail.jsx';
 import Assessment from './pages/Assessment.jsx';
 import SpaceStore from './pages/SpaceStore.jsx';
-import Login from './pages/Login.jsx';
-import Register from './pages/Register.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import TicketView from './pages/TicketView.jsx';
+import Login from './pages/auth/Login.jsx';
+import Register from './pages/auth/Register.jsx';
+import Dashboard from './pages/account/Dashboard.jsx';
+import TicketView from './pages/account/TicketView.jsx';
 import VerifyTicket from './pages/VerifyTicket.jsx';
-import AdminDashboard from './pages/AdminDashboard.jsx';
-import BookingPassengers from './pages/BookingPassengers.jsx';
-import BookingSummary from './pages/BookingSummary.jsx';
-import BookingProcessing from './pages/BookingProcessing.jsx';
-import BookingSuccess from './pages/BookingSuccess.jsx';
+import AdminDashboard from './pages/account/AdminDashboard.jsx';
+import BookingPassengers from './pages/booking/BookingPassengers.jsx';
+import BookingSummary from './pages/booking/BookingSummary.jsx';
+import BookingProcessing from './pages/booking/BookingProcessing.jsx';
+import BookingSuccess from './pages/booking/BookingSuccess.jsx';
 import { Spinner } from './components/ui.jsx';
 import { useAuth } from './context/AuthContext.jsx';
 
@@ -62,4 +62,6 @@ export default function App() {
     </MainLayout>
   );
 }
+
+
 

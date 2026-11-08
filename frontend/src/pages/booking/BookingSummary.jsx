@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Users, MapPin, CalendarDays, Rocket, CreditCard, AlertTriangle } from 'lucide-react';
-import api from '../api/client.js';
-import { useAuth } from '../context/AuthContext.jsx';
-import { formatINR, formatDate } from '../utils/format.js';
-import { errorMessage } from '../utils/format.js';
+import api from '../../api/client.js';
+import { useAuth } from '../../context/AuthContext.jsx';
+import { formatINR, formatDate } from '../../utils/format.js';
+import { errorMessage } from '../../utils/format.js';
 
 export default function BookingSummary() {
   const { user } = useAuth();
@@ -184,3 +184,4 @@ export default function BookingSummary() {
     </div>
   );
 }
+

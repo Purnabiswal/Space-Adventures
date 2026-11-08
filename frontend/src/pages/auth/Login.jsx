@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Rocket } from 'lucide-react';
-import { useAuth } from '../context/AuthContext.jsx';
-import { errorMessage } from '../utils/format.js';
+import { useAuth } from '../../context/AuthContext.jsx';
+import { errorMessage } from '../../utils/format.js';
 
 export default function Login() {
   const { login } = useAuth();
@@ -50,5 +50,6 @@ export default function Login() {
     </div>
   );
 }
+
 
 

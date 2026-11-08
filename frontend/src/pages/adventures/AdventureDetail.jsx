@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { Clock, Users, Check, ArrowRight, AlertTriangle, Briefcase, PartyPopper } from 'lucide-react';
-import api from '../api/client.js';
-import { Loading, ErrorState } from '../components/ui.jsx';
-import { formatINR, formatDate } from '../utils/format.js';
-import { useAuth } from '../context/AuthContext.jsx';
+import api from '../../api/client.js';
+import { Loading, ErrorState } from '../../components/ui.jsx';
+import { formatINR, formatDate } from '../../utils/format.js';
+import { useAuth } from '../../context/AuthContext.jsx';
 
 const PKG_QUIPS = {
   'moon-escape': 'Because weekend trips to Goa are getting predictable.',
@@ -176,5 +176,6 @@ export default function AdventureDetail() {
     </div>
   );
 }
+
 
 

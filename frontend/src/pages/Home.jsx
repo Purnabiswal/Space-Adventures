@@ -76,13 +76,21 @@ export default function Home() {
               <ArrowRight className="h-5 w-5" />
             </Link>
 
-            <Link
-              to="/assessment"
-              className="btn-outline-light !px-7 !py-3 text-base"
-            >
-              Are you astronaut material?
-              <Rocket className="h-5 w-5" />
-            </Link>
+            <div className="relative">
+              <img
+                src="/visa.png"
+                alt=""
+                className="pointer-events-none absolute -right-64 -top-40 z-20 w-72"
+              />
+
+              <Link
+                to="/assessment"
+                className="btn-outline-light !px-7 !py-3 text-base"
+              >
+                Are you astronaut material?
+                <Rocket className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

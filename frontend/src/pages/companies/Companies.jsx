@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight } from 'lucide-react';
-import api from '../api/client.js';
-import { SectionHeading, Loading, ErrorState } from '../components/ui.jsx';
+import api from '../../api/client.js';
+import { SectionHeading, Loading, ErrorState } from '../../components/ui.jsx';
 
 const QUIPS = {
   isro: 'Government-level ambition. Galactic-level dreams.',
@@ -52,5 +52,6 @@ export default function Companies() {
     </div>
   );
 }
+
 
 

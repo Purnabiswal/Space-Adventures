@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams, useSearchParams, useNavigate } from 'react-router-dom';
 import { Ruler, Clock, Gauge, Thermometer, Wind, MapPin, ArrowRight, Sparkles, ShieldCheck, Users, Star, Rocket, Info, AlertTriangle } from 'lucide-react';
-import api from '../api/client.js';
-import { Loading, ErrorState } from '../components/ui.jsx';
-import { formatINR, formatDate } from '../utils/format.js';
-import { useAuth } from '../context/AuthContext.jsx';
+import api from '../../api/client.js';
+import { Loading, ErrorState } from '../../components/ui.jsx';
+import { formatINR, formatDate } from '../../utils/format.js';
+import { useAuth } from '../../context/AuthContext.jsx';
 
 const DEST_COPY = {
   moon: { quip: 'Only 3 days away, depending on traffic. No traffic signals yet.', warning: 'Please do not attempt to weigh yourself on the Moon. It will ruin your ego.' },
@@ -370,3 +370,4 @@ export default function DestinationDetail() {
     </div>
   );
 }
+

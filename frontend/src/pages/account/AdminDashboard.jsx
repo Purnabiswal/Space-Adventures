@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { LayoutDashboard, Users, Building2, Globe2, Briefcase, Layers, HelpCircle, TicketIcon, ShieldCheck } from 'lucide-react';
-import api from '../api/client.js';
-import { Loading, ErrorState } from '../components/ui.jsx';
-import { formatINR, formatDate } from '../utils/format.js';
+import api from '../../api/client.js';
+import { Loading, ErrorState } from '../../components/ui.jsx';
+import { formatINR, formatDate } from '../../utils/format.js';
 
 const TABS = [
   { key: 'overview', label: 'Overview', icon: LayoutDashboard },
@@ -222,5 +222,6 @@ function SimpleList({ title, rows }) {
     </div>
   );
 }
+
 
 

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowRight, Users, Plus, Minus, User, Info, AlertTriangle } from 'lucide-react';
-import { useAuth } from '../context/AuthContext.jsx';
-import { formatINR } from '../utils/format.js';
+import { useAuth } from '../../context/AuthContext.jsx';
+import { formatINR } from '../../utils/format.js';
 
 const BERTH_OPTIONS = ['any', 'lower', 'middle', 'upper', 'window', 'aisle'];
 
@@ -165,3 +165,4 @@ export default function BookingPassengers() {
     </div>
   );
 }
+

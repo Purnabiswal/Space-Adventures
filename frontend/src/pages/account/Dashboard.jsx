@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, CalendarDays, Download, Ticket as TicketIcon, ArrowRight, Award, Rocket } from 'lucide-react';
-import api from '../api/client.js';
-import { Loading, ErrorState, EmptyState } from '../components/ui.jsx';
-import { formatINR, formatDate, daysRemaining, errorMessage } from '../utils/format.js';
-import { downloadProtected } from '../utils/download.js';
-import { useAuth } from '../context/AuthContext.jsx';
+import api from '../../api/client.js';
+import { Loading, ErrorState, EmptyState } from '../../components/ui.jsx';
+import { formatINR, formatDate, daysRemaining, errorMessage } from '../../utils/format.js';
+import { downloadProtected } from '../../utils/download.js';
+import { useAuth } from '../../context/AuthContext.jsx';
 
 export default function Dashboard() {
   const { user } = useAuth();
@@ -143,6 +143,7 @@ export default function Dashboard() {
     </div>
   );
 }
+
 
 
 

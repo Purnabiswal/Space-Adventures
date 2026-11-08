@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Clock, Thermometer, ArrowRight, Rocket, MapPin, CalendarDays, Sparkles, Globe2 } from 'lucide-react';
-import api from '../api/client.js';
-import { SectionHeading, Loading, ErrorState } from '../components/ui.jsx';
-import { formatDate } from '../utils/format.js';
+import api from '../../api/client.js';
+import { SectionHeading, Loading, ErrorState } from '../../components/ui.jsx';
+import { formatDate } from '../../utils/format.js';
 
 const DEST_COPY = {
   moon: { quip: 'Only 3 days away, depending on traffic. No traffic signals yet.', fact: 'You can jump about 6x higher here. Highly recommended.' },
@@ -197,3 +197,4 @@ export default function Destinations() {
     </div>
   );
 }
+

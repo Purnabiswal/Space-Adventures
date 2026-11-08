@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Rocket, ShieldCheck, Clock, Globe2, Sparkles, CheckCircle2, XCircle, RefreshCw } from 'lucide-react';
-import api from '../api/client.js';
-import { errorMessage } from '../utils/format.js';
+import api from '../../api/client.js';
+import { errorMessage } from '../../utils/format.js';
 
 const PROCESSING_MESSAGES = [
   'Contacting Mission Control...',
@@ -188,3 +188,4 @@ export default function BookingProcessing() {
     </div>
   );
 }
+

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Clock, Users, ArrowRight } from 'lucide-react';
-import api from '../api/client.js';
-import { SectionHeading, Loading, ErrorState } from '../components/ui.jsx';
-import { formatINR } from '../utils/format.js';
+import api from '../../api/client.js';
+import { SectionHeading, Loading, ErrorState } from '../../components/ui.jsx';
+import { formatINR } from '../../utils/format.js';
 
 const PKG_QUIPS = {
   'moon-escape': 'Because weekend trips to Goa are getting predictable.',
@@ -65,5 +65,6 @@ export default function Adventures() {
     </div>
   );
 }
+
 
 

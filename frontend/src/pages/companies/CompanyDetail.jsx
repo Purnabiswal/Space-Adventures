@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { MapPin, Calendar, AlertTriangle, ArrowRight, Rocket, Building2 } from 'lucide-react';
-import api from '../api/client.js';
-import { Loading, ErrorState } from '../components/ui.jsx';
-import { formatINR } from '../utils/format.js';
+import api from '../../api/client.js';
+import { Loading, ErrorState } from '../../components/ui.jsx';
+import { formatINR } from '../../utils/format.js';
 
 const QUIPS = {
   isro: 'Government-level ambition. Galactic-level dreams.',
@@ -110,5 +110,6 @@ export default function CompanyDetail() {
     </div>
   );
 }
+
 
 
